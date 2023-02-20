@@ -1,34 +1,34 @@
 import java.util.Random;
+
 public class Main {
-
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        int randomInt = getRandomInt(5, 10);
+        System.out.println("Suvaline number: " + randomInt);
 
-        prindiForTsykkel(kordadeArv: 5);
-        prindiForTsykkel(kordadeArv:10);
+        String str = "aias sadas saia";
+        boolean isPalindromic = isPalindrome(str);
+        System.out.println(str + " on palindroom? " + isPalindromic);
 
-        hinnang = ""
-        if (12 < 0) {
-            hinnang = "on jääs";
-        } else {
-            hinnang = "on vesi";
-        }
-
-
-    // liitmine
-    public static int sum(int a, int b) {
-        return a + b;
-        }
+        double[] numbers = {0, 8};
+        System.out.println("Average of numbers: " + calculateAverage(numbers));
     }
 
+    // arvutab kahe arvu keskmist
+    public static double calculateAverage(double[] numbers) {
+        double sum = 0;
+        for (double number : numbers) {
+            sum += number;
+        }
+        return sum / numbers.length;
+    }
 
-    //suvaline number
+    // annab suvalise numbri vahemikus
     public static int getRandomInt(int min, int max) {
         Random rand = new Random();
         return rand.nextInt((max - min) + 1) + min;
     }
 
-    //palindroomi ülevaataja
+    // kontrollib palindroomi
     public static boolean isPalindrome(String str) {
         String reversed = new StringBuilder(str).reverse().toString();
         return str.equals(reversed);
