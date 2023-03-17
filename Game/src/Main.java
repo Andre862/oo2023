@@ -1,10 +1,14 @@
-import java.util.Scanner;
+
+import java.util.*;
 
 public class Main {
 
     // fori
     // sout
     public static void main(String[] args) {
+//        Random rand = new Random(); // uus instants
+//        Math.random(); // static
+
         System.out.println("Hello world!");
 //        String sonaline = "Sõnaline muutuja";
 //        char taheline = 's'; // üks täht
@@ -18,69 +22,41 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
 
-        int worldWidth = 10;
-        int worldHeight = 5;
+        World world = new World(10,5);
         //                    parem klõps -> refactor -> extract method
-        Player player = new Player(worldWidth, worldHeight);
-        Dragon dragon = new Dragon(worldWidth, worldHeight);
-        Orc orc = new Orc(worldWidth, worldHeight);
+        Player player = new Player(world.width, world.height);
+        Dragon dragon = new Dragon(world.width, world.height);
+        Orc orc = new Orc(world.width, world.height);
 
-        printMap(worldWidth, worldHeight,
+        Item sword = new Item(10,1,"Mõõk", world.width, world.height);
+        Item hammer = new Item(5,3,"Haamer", world.width, world.height);
+        Item boot = new Item(1,10,"Saabas", world.width, world.height);
+
+        // import! java.util.List
+        // import: java.util.ArrayList
+        //                              import: java.util.Arrays
+        // List --> muudetav
+        List<Item> items = new ArrayList<>(Arrays.asList(sword, hammer, boot));
+
+//        Item[] items1 = {sword, hammer, boot};
+        // Array -> ei ole muudetav (read-only)
+
+        world.printMap(world.width, world.height,
                 player.xCoordinaate, player.yCoordinaate, player.symbol,
                 dragon.xCoordinaate, dragon.yCoordinaate, dragon.symbol,
-                orc.xCoordinaate, orc.yCoordinaate, orc.symbol);
+                orc.xCoordinaate, orc.yCoordinaate, orc.symbol, items);
         String input = scanner.nextLine();
 //        for (; !input.equals("end"); )
         while (!input.equals("end")) {
-            player.move(input);
-            printMap(worldWidth, worldHeight,
+            player.move(input, world);
+            world.printMap(world.width, world.height,
                     player.xCoordinaate, player.yCoordinaate, player.symbol,
                     dragon.xCoordinaate, dragon.yCoordinaate, dragon.symbol,
-                    orc.xCoordinaate, orc.yCoordinaate, orc.symbol);
+                    orc.xCoordinaate, orc.yCoordinaate, orc.symbol, items);
             System.out.println();
             input = scanner.nextLine();
         }
     }
 
-    private static void printMap(int worldWidth, int worldHeight, int playerXCoordinaate, int playerYCoordinaate, char playerSymbol, int dragonXCoordinaate, int dragonYCoordinaate, char dragonSymbol, int orcXCoordinaate, int orcYCoordinaate, char orcSymbol) {
-        // algväärtus   kuni   iga tsükkel
-        for (int y = 0; y < worldHeight; y++) {
-            System.out.println();
-            for (int x = 0; x < worldWidth; x++) {
-                if (y == 0 || y == worldHeight -1) {
-                    System.out.print("-");
-                } else if (x == 0 || x == worldWidth -1) {
-                    System.out.print("|");
-                } else {
-//                    ctrl + alt + m
-//                    parem klõps -> refactor -> extract method
-                    printCharacters(playerXCoordinaate, playerYCoordinaate, playerSymbol,
-                            dragonXCoordinaate, dragonYCoordinaate, dragonSymbol,
-                            orcXCoordinaate, orcYCoordinaate, orcSymbol, y, x);
-                }
-            }
-        }
-    }
 
-    // int on tagastustüüp ehk mis järgneb return kirjele
-    private static int getRandomCoordinaate(int worldDimension) {
-        return (int) (Math.random() * (worldDimension - 2) + 1);
-        // returni järel tuleb täisarv
-    }
-
-    // void on tagastustüüp ehk mis tüüp järgneb return kirjele
-    // void tähendab, et ei tagastatagi midagi
-    private static void printCharacters(int playerXCoordinaate, int playerYCoordinaate, char playerSymbol,
-                                        int dragonXCoordinaate, int dragonYCoordinaate, char dragonSymbol,
-                                        int orcXCoordinaate, int orcYCoordinaate, char orcSymbol, int mapY, int mapX) {
-        if (playerXCoordinaate == mapX && playerYCoordinaate == mapY) {        // aktiveerin + parem klõps + refactor + rename
-            System.out.print(playerSymbol);
-        } else if (dragonXCoordinaate == mapX && dragonYCoordinaate == mapY) {
-            System.out.print(dragonSymbol);
-        } else if (orcXCoordinaate == mapX && orcYCoordinaate == mapY) {
-            System.out.print(orcSymbol);
-        } else {
-            System.out.print(" ");
-        }
-    }
 }

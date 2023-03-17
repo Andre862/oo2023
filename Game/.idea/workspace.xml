@@ -5,17 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6867771-52e4-4a35-a110-ed39627fa69d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../01_funktsioon/Funktsioon/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../01_funktsioon/Game/Game.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../01_funktsioon/Game/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Direction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dragon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Orc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01_funktsioon/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01_funktsioon/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01_funktsioon/Kodutoo1/src/Jalgratas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_funktsioon/Kodutoo1/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../01_funktsioon/Kodutoo1/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Klass/src/Kasutaja.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Klass/src/Kasutaja.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Klass/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Klass/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Klass/src/Tellimus.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Klass/src/Tellimus.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -63,6 +62,9 @@
       <updated>1676636635824</updated>
       <workItem from="1676636636988" duration="1152000" />
       <workItem from="1676638685050" duration="1168000" />
+      <workItem from="1676886293905" duration="2498000" />
+      <workItem from="1677786693332" duration="24000" />
+      <workItem from="1677843002718" duration="4221000" />
     </task>
     <servers />
   </component>

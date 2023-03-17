@@ -3,6 +3,9 @@ public class Player {
     int yCoordinaate;
     char symbol;
     Direction direction; // 3nda tunni teema
+    // Ese: xCoordinaate, yCoordinate, tugevusest, kasutuskordadest, nimest
+
+
     // constructor
     public Player(int worldWidth, int worldHeight) {
         this.xCoordinaate = getRandomCoordinaate(worldWidth);
@@ -29,13 +32,13 @@ public class Player {
         } else if (input.equals("d")) {
             this.direction = Direction.RIGHT;
         }
-        if (direction.equals(Direction.UP) && this.yCoordinaate > 1){
+        if (direction.equals(Direction.UP) && this.yCoordinaate > 1) {
             this.yCoordinaate = this.yCoordinaate - 1;
-        } else if (direction.equals(Direction.DOWN) && this.yCoordinaate < world.height-1) {
+        } else if (direction.equals(Direction.DOWN) && this.yCoordinaate < world.height-2) {
             this.yCoordinaate = this.yCoordinaate + 1;
         } else if (direction.equals(Direction.LEFT) && this.xCoordinaate > 1) {
             this.xCoordinaate = this.xCoordinaate - 1;
-        } else if (direction.equals(Direction.RIGHT)&& this.xCoordinaate < world.width-1) {
+        } else if (direction.equals(Direction.RIGHT) && this.xCoordinaate < world.width-2) {
             this.xCoordinaate = this.xCoordinaate + 1;
         }
     }

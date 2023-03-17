@@ -1,3 +1,4 @@
+import java.util.Date;
 public class Kasutaja {
     String kasutajanimi;
     String parool;
@@ -29,6 +30,6 @@ public class Kasutaja {
 
     public void muudaParool(String uusParool) {
         this.parool = uusParool;
-        System.out.printIn("Parool muudetud!");
-
+        System.out.println("Parool muudetud!");
+    }
 }

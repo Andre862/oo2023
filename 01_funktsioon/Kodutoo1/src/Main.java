@@ -10,7 +10,11 @@ public class Main {
         System.out.println(str + " on palindroom? " + isPalindromic);
 
         double[] numbers = {0, 8};
-        System.out.println("Average of numbers: " + calculateAverage(numbers));
+        System.out.println("Kahe numbri keskmine: " + calculateAverage(numbers));
+
+        Jalgratas jalgratas = new Jalgratas("Scott","Mägedemüraja", 5,'N');
+        jalgratas.kiiverJalgratas();
+        jalgratas.setJalgratas();
     }
 
     // arvutab kahe arvu keskmist
