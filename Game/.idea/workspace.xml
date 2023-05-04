@@ -5,16 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6867771-52e4-4a35-a110-ed39627fa69d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../01_funktsioon/Kodutoo1/src/Jalgratas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01_funktsioon/Kodutoo1/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../01_funktsioon/Kodutoo1/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06_liides/projekt/src/Andmed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06_liides/projekt/src/Isikukood.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06_liides/projekt/src/IsikukoodEE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06_liides/projekt/src/IsikukoodFI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06_liides/projekt/src/IsikukoodLV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06_liides/projekt/src/IsikukoodSW.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Character.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WorldObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_klassikomplekt/Kodutoo3/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../03_klassikomplekt/Kodutoo3/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_klassikomplekt/Kodutoo3/src/Ostja.java" beforeDir="false" afterPath="$PROJECT_DIR$/../03_klassikomplekt/Kodutoo3/src/Ostja.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_klassikomplekt/Kodutoo3/src/Ratas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../03_klassikomplekt/Kodutoo3/src/Ratas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_klassikomplekt/out/production/Kodutoo3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../03_klassikomplekt/out/production/Kodutoo3/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_klassikomplekt/out/production/Kodutoo3/Ostja.class" beforeDir="false" afterPath="$PROJECT_DIR$/../03_klassikomplekt/out/production/Kodutoo3/Ostja.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_klassikomplekt/out/production/Kodutoo3/Ratas.class" beforeDir="false" afterPath="$PROJECT_DIR$/../03_klassikomplekt/out/production/Kodutoo3/Ratas.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dragon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Orc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Orc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Klass/src/Kasutaja.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Klass/src/Kasutaja.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Klass/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Klass/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Klass/src/Tellimus.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Klass/src/Tellimus.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +76,8 @@
       <workItem from="1676886293905" duration="2498000" />
       <workItem from="1677786693332" duration="24000" />
       <workItem from="1677843002718" duration="4221000" />
+      <workItem from="1679654479426" duration="1126000" />
+      <workItem from="1679660653209" duration="269000" />
     </task>
     <servers />
   </component>

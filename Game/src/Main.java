@@ -1,4 +1,3 @@
-
 import java.util.*;
 
 public class Main {
@@ -27,6 +26,9 @@ public class Main {
         Player player = new Player(world.width, world.height);
         Dragon dragon = new Dragon(world.width, world.height);
         Orc orc = new Orc(world.width, world.height);
+        // MITTE java.lang import
+        // saatke printMap sisse hoopis character ja if/else asemel funktsiooni sees forEach tsükkel
+        List<Character> characters = new ArrayList<>(Arrays.asList(player, dragon, orc));
 
         Item sword = new Item(10,1,"Mõõk", world.width, world.height);
         Item hammer = new Item(5,3,"Haamer", world.width, world.height);
@@ -54,6 +56,13 @@ public class Main {
                     dragon.xCoordinaate, dragon.yCoordinaate, dragon.symbol,
                     orc.xCoordinaate, orc.yCoordinaate, orc.symbol, items);
             System.out.println();
+            for (Item i : items) {
+                if (i.xCoordinate == player.xCoordinaate && i.yCoordinate == player.yCoordinaate) {
+                    player.item = i;
+                    System.out.println("Korjasid eseme: " + player.item.name);
+                    break;
+                }
+            }
             input = scanner.nextLine();
         }
     }

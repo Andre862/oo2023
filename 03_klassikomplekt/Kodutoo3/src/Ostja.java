@@ -7,8 +7,8 @@ public class Ostja {
     String eesnimi;
     String perenimi;
     boolean aktiivne;
-    Date ostmisAeg;
-    Date muumisAeg;
+    Date loomisAeg;
+    Date kustutamisAeg;
 
     public Ostja(String kasutajanimi, String parool, String email, String eesnimi, String perenimi){
         this.kasutajanimi = kasutajanimi;
@@ -17,14 +17,14 @@ public class Ostja {
         this.eesnimi = eesnimi;
         this.perenimi = perenimi;
         this.aktiivne = true;
-        this.ostmisAeg = new Date();
-        this.muumisAeg = null;
+        this.loomisAeg = new Date();
+        this.kustutamisAeg = null;
     }
 
-    public String ratasMuudud(){
+    public String kustutaKasutaja(){
         this.aktiivne = false;
-        this.muumisAeg = new Date();
-        return "Ratas on müüdud."; // kuna on mingisugune tagastus, siis peab selle salvestama muututjasse, kui func välja kutsutakse
+        this.kustutamisAeg = new Date();
+        return "Kasutaja kustutatud."; // kuna on mingisugune tagastus, siis peab selle salvestama muututjasse, kui func välja kutsutakse
     }
 
     public void muudaParool(String uusParool){

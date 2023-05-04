@@ -13,48 +13,37 @@ public class World {
                          int playerXCoordinaate, int playerYCoordinaate, char playerSymbol,
                          int dragonXCoordinaate, int dragonYCoordinaate, char dragonSymbol,
                          int orcXCoordinaate, int orcYCoordinaate, char orcSymbol, List<Item> items) {
-        // algväärtus   kuni   iga tsükkel
-        char symbol = ''
+        char symbol = ' '; // luuakse uus muutuja (deklareerimine), esmakordne väärtuse andmine on initsialiseerimine
         for (int y = 0; y < worldHeight; y++) {
             System.out.println();
             for (int x = 0; x < worldWidth; x++) {
-                String symbol; //luuakse uus muutuja
                 if (y == 0 || y == worldHeight -1) {
-//                    System.out.print("-");
                     symbol = '-';
                 } else if (x == 0 || x == worldWidth -1) {
-//                    System.out.print("|");
                     symbol = '|';
                 } else {
-//                    ctrl + alt + m
-//                    parem klõps -> refactor -> extract method
                     for (Item i: items) {
-                        if (i.yCoordinate == y && i.xCoordinate == x) {        // aktiveerin + parem klõps + refactor + rename//                           System.out.print("I");
+                        if (i.yCoordinate == y && i.xCoordinate == x) {        // aktiveerin + parem klõps + refactor + rename
+                            symbol = 'I';
+                            break;
                         }
                     }
-   //                 System.out.println("I");
-                    symbol = "I";
-                    break;
+                    if (playerXCoordinaate == x && playerYCoordinaate == y) {        // aktiveerin + parem klõps + refactor + rename
+                        symbol = playerSymbol;
+                    } else if (dragonXCoordinaate == x && dragonYCoordinaate == y) {
+                        symbol = dragonSymbol;
+                    } else if (orcXCoordinaate == x && orcYCoordinaate == y) {
+                        symbol = orcSymbol;
+                    }
+//                    for (Character c: characters) {
+//                        if (c.xCoordinaate == x && c.yCoordinaate == y) {
+//                            symbol = c.symbol;
+//                        }
+//                    }
                 }
+                System.out.print(symbol);
+                symbol = ' ';
             }
-            // crtl alt n
-            //parem klõps refractor inline method (funktsiooni peale klikkides)
-            char result;
-            if (playerXCoordinaate == x && playerYCoordinaate == y) {        // aktiveerin + parem klõps + refactor + rename
-       //         System.out.print(playerSymbol);
-                result = playerSymbol;
-            } else if (dragonXCoordinaate == x && dragonYCoordinaate == y) {
-       //         System.out.print(dragonSymbol);
-                result = dragonSymbol;
-            } else if (orcXCoordinaate == x && orcYCoordinaate == y) {
-    //            System.out.print(orcSymbol);
-                result = orcSymbol;
-            } else {
-     //           System.out.print(" ");
-                result = ' ';
-            }
-            symbol = result;
-            System.out.println(symbol);
         }
     }
 

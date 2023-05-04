@@ -16,11 +16,11 @@ public class Ratas {
         this.labisoit = random.nextInt(10000);
         if (this.kaigud < 16) {
             System.out.println("Linnaratta käikude arv on:" + this.kaigud);
-            System.out.println("Linnaratta läbisõit on:" + this.labisoit);
+            System.out.println("Linnaratta läbisõit on " + this.labisoit + " kilomeetrit ");
         } else {
             System.out.println("Käike on üle 16ne, tegemist on maastikurattaga.");
         }
-        if (this.labisoit > 5000){
+        if (this.labisoit < 5000){
             uusRatas();
         }
     }
