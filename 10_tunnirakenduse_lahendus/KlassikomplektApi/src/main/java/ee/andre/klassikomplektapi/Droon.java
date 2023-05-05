@@ -14,6 +14,7 @@ public class Droon {
     private String nimi;
     private double hind;
     private int aasta;
+    private boolean aktiivne;
 
 
 }

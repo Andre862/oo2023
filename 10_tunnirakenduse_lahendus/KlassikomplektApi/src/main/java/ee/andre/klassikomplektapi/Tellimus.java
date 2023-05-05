@@ -5,12 +5,15 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Laoseis {
+public class Tellimus {
     private int id;
-    private boolean aktiivne;
+    private Ostja tellija;
+    private List<Droon> droonid;
 
 }
