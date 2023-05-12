@@ -1,20 +1,20 @@
 package ee.andre.klassikomplektapi;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.config.AnnotationDrivenBeanDefinitionParser;
+//import org.springframework.scheduling.config.AnnotationDrivenBeanDefinitionParser;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
-import java.util.function.ToDoubleBiFunction;
+//import java.util.function.ToDoubleBiFunction;
 @RestController
 public class TellimusController {
     @Autowired
     DroonListController DroonListController;
     @Autowired
-    DroonController OstjaController;
+    OstjaController OstjaController;
     List<Droon> tellitudDroonid = new ArrayList<>(Arrays.asList(
             new Droon(1,"Dji mini 3 pro", 1000.00, 2022, true),
             new Droon(2, "Dji Mavic 3 pro", 3600.99, 2023, true)
@@ -30,7 +30,7 @@ public class TellimusController {
     }
 
     @DeleteMapping("kustuta-tellimus/{index}")
-    public String kustutaLaev(@PathVariable int index) {
+    public String kustutaDroon(@PathVariable int index) {
         tellimused.remove(index);
         return "Tellimus kustutatud!";
     }
